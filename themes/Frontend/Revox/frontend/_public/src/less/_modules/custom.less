@@ -1,0 +1,88 @@
+.forms--content,
+.custom-page--content{
+	background-image: url(@shopsite_background_picture_mobil);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+	background-size: 140vw;
+	.forms--headline,
+	.forms--container,
+	.content--custom{
+		.unitize-padding(24,11);
+    	background-color: rgba(255,255,255,0.9);
+		border: none;
+		.unitize(margin-bottom,0);
+		border-radius: 0;
+		width: 100%;
+	}
+	.content--custom{
+		min-height: 85vh;
+	}
+	.forms--description {
+    	.unitize-margin(10,0,20,0);
+	}
+}
+
+.garantie-signs{
+	width: 100%;
+	.garantie-inner{
+		display: flex;
+		padding-bottom: 10px;
+		.garantie-image{
+			width: 10%;
+			padding: 0px 10px 10px 0px;
+		}
+		.garantie-text{
+			width: 90%;
+		}
+	}
+}
+
+@media screen and (min-width: @phoneLandscapeViewportWidth) {
+	.forms--content,
+	.custom-page--content{
+		background-image: url(@shopsite_background_picture_desktop);
+		.content--custom{
+			width: 75%;
+			min-height: 90vh;
+		}
+	}
+}
+
+@media screen and(min-width: @tabletViewportWidth) {
+	.forms--content,
+	.custom-page--content{
+		background-image: url(@shopsite_background_picture_mobil);
+		background-size: cover;
+		min-height: 89vh;
+		.forms--headline,
+		.forms--container,
+		.content--custom{
+			.unitize-padding(24);
+			padding-left: 69px;
+			width: 75%;
+		}
+	}
+	
+	.sidebar-main {
+		.sidebar--categories-wrapper{
+			display:none;
+		}
+		.is--ctl-forms &,
+		.is--ctl-custom & {
+			& + .content--wrapper {
+				.unitize-margin(0, 0);
+			}
+		}
+	}
+}
+
+@media screen and (min-width: @tabletLandscapeViewportWidth) {
+	.forms--content,
+	.custom-page--content{
+		background-image: url(@shopsite_background_picture_desktop);
+		.content--custom{
+			width: 50%;
+		}
+	}
+}

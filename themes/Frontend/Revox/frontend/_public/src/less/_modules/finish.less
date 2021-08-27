@@ -1,0 +1,36 @@
+#pay-label{
+	display: flex;
+    justify-content: flex-end;
+    margin-top: -28px;
+	img{
+		height: 40px;
+		width: auto;
+	}
+}
+
+#label-powerpay{
+	display: flex;
+    justify-content: flex-end;
+    margin-top: -28px;
+	img{
+		height: auto;
+		width: 110px;
+		margin-right: -9px;
+	}
+}
+
+@media screen and (min-width: @phoneLandscapeViewportWidth) {
+	#label-powerpay{
+		img{
+			height: 40px;
+			width: auto;
+			margin-right: -13px;
+		}
+	}
+}
+
+@media screen and(min-width: @tabletViewportWidth) {
+  .finish--content {
+    .unitize-padding(25, 24, 25, 24);
+  }
+}

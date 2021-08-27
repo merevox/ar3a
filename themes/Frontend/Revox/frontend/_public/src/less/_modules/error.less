@@ -1,0 +1,74 @@
+.error--service-wrapper {
+  background-image: url(https://studioart-revox.com/media/image/96/fa/7d/0650_Revox_Key_Revox_Desktop_1920x1920@2x.jpg);
+  min-height: 97vh;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  .unitize(margin-top, -40);
+  .error-sidebar{
+    background-color: rgba(255,255,255,0.7);
+    min-height: 50vh;
+    .unitize-padding(50, 30, 30, 24);
+    .unitize(margin-top,80);
+    position: absolute;
+    h2{
+      .unitize(font-size, 25);
+    }
+  }
+}
+
+@supports (-webkit-overflow-scrolling: touch) { 
+	  .error--service-wrapper{ background-attachment: scroll; } 
+	}
+
+@media screen and(min-width: @phoneLandscapeViewportWidth) {
+  .error--service-wrapper {
+    min-height: 94vh;
+    .unitize-margin(0);
+    .error-sidebar {
+      background-color: rgba(255, 255, 255, 0.9);
+      min-height: 50vh;
+      .unitize-padding(5, 30, 30, 24);
+      .unitize(margin-top, 0);
+      position: relative;
+      width: 50%;
+    }
+  }
+}
+
+@media screen and(min-width: @tabletViewportWidth) {
+  .error--service-wrapper {
+    .unitize-margin(44,0,0,0);
+    min-height: 79vh;
+    .error-sidebar {
+      min-height: 79vh;
+      .unitize-padding(100, 30, 30, 24);
+    }
+  }
+}
+
+@media screen and(min-width: @tabletLandscapeViewportWidth) {
+  .error--service-wrapper {
+    .unitize-margin(46,0,0,0);
+    min-height: 87vh;
+    .error-sidebar {
+      min-height: 87vh;
+      .unitize-padding(100, 30, 30, 24);
+    }
+  }
+}
+
+@media screen and(min-width: @desktopViewportWidth) {
+  .error--service-wrapper {
+    .unitize-margin(24,0,0,0);
+    min-height: 92vh;
+    .error-sidebar{
+      .unitize-width(600);
+      .unitize-padding(50,100,100,100);
+      min-height: 92vh;
+    }
+  }
+}

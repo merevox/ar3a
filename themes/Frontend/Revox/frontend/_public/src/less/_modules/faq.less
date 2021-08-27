@@ -1,0 +1,97 @@
+.content--custom{
+	h2{
+		.subtitle{
+			&::after{
+				color: #000;
+				font-size: 8px;
+				font-family: shopware;
+				content: @sw-icon-arrow-down;
+				margin-top: 32px;
+				margin-left: 10px;
+			}
+			&.subopen{
+				&::after{
+					color: #000;
+					font-size: 8px;
+					font-family: shopware;
+					content: @sw-icon-arrow-up;
+					margin-top: 32px;
+					margin-left: 10px;
+				}
+			}
+		}
+	}
+	.subcategories{
+		overflow: hidden;
+		h4{
+			.unitize-padding(3,0,0,20);
+			.unitize(font-size, 14);
+			.unitize-margin(3);
+			border-top: .5px dotted lightgray;
+			
+			.innertitle{
+				&::before{
+					color: #000;
+					font-size: 15px;
+					font-family: shopware;
+					content: @sw-icon-plus3;
+				}
+				&.subopen{
+					&::before{
+						color: #000;
+						font-size: 15px;
+						font-family: shopware;
+						content: @sw-icon-minus3;
+					}
+				}
+			}	
+		}
+		p{
+			margin-left: 40px;	
+		}
+		ul{
+			margin-left: 60px;	
+		}
+		.reason{
+			color: #C00;
+		}
+		.solution{
+			color: #36F;
+		}
+		.part_video{
+			display: flex;
+			flex-wrap: wrap;
+			.video-cell{
+				width: 100%;
+				margin: 1%;
+				.howtovideos{
+					iframe{
+						width: 100%;
+						min-height: 214px;
+					}	
+				}
+				.howtotext{
+					text-align: center;
+					h3{
+						margin-top: 5px;
+					}
+					p{
+						margin-left: 0px;	
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: @desktopViewportWidth) {
+	.content--custom{
+		.subcategories{
+			.part_video{
+				.video-cell{
+					width: 48%;
+				}
+			}
+		}
+	}	
+}

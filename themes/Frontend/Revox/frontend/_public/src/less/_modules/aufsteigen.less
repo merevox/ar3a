@@ -1,0 +1,133 @@
+.kombination{
+	background-color: #e3e3e3;
+	.inhalt {
+		padding: 10px;
+		.kombi--header {
+			h1 {
+				width: 500px;
+			}
+		}
+		.kombi--content{
+			margin-top: 35px;
+			.header--kombi{
+				padding-bottom: 22px;
+				.kopf{
+					font-size: 20px;
+					line-height: 25px;
+					font-weight: bold;
+				}
+			}
+			.inner--kombi{
+				.first{
+					padding-bottom: 22px;
+				}
+				.second {
+					display: inline-flex;
+					flex-wrap: wrap;
+					justify-content: center;
+					.imageholder {
+						width: 250px;
+						p {
+							width: 95%;
+							padding: 3%;
+							text-align: center;
+							font-size: 12px;
+							line-height: 18px;
+						}
+					}
+					.kombi-product{
+						width: 100%;
+						margin-top: 5%;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: @phoneLandscapeViewportWidth) {
+	.kombination {
+		.inhalt {
+			.kombi--content {
+				.inner--kombi {
+					.second {
+						.imageholder {
+							padding: 3%;
+						}
+						.kombi-product{
+							width: max-content;
+							margin-top: 15%;
+							margin-left: 30px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: @tabletViewportWidth) {
+	.kombination {
+		.inhalt {
+			padding: 10px 20px;
+			.kombi--content {
+				.inner--kombi {
+					.second {
+						.imageholder {
+							padding: 1%;
+							width: 270px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: @tabletLandscapeViewportWidth) {
+	.kombination {
+		.inhalt {
+			padding: 80px;
+			.kombi--content {
+				.inner--kombi {
+					.second {
+						.kombi-product{
+							margin-top: 0;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: @desktopViewportWidth) {
+	.kombination {
+		.inhalt {
+			display: flex;
+			.kombi--content {
+				.inner--kombi {
+					.second {
+						justify-content: left;
+						.imageholder {
+							padding: 3% 3% 3% 0%;
+						}
+						.kombi-product{
+							padding-left: 30px;
+							.kombi-product-headline{
+								padding-top: 15%;
+    							padding-bottom: 5%;
+							}
+							.kombilink:hover{
+								font-weight: bold;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+

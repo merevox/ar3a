@@ -1,0 +1,283 @@
+.tauschzeit{
+	.leheader{
+		position: relative;
+		.lebanner-mobil{
+			img{
+				width: 100%;
+			}
+		}
+		.lebanner-desktop{
+			display: none;	
+		}
+		.lebanner-headline{
+			position: absolute;
+    		top: 7%;
+    		left: 11%;
+    		font-weight: 800;
+    		font-size: 3.25em;
+    		background-color: rgba(255,255,255,0.7);
+    		padding: 10px 10px 0px 10px;
+			text-transform: uppercase;
+		}
+		.brown-button {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			width: 40%;
+		}
+	}
+	.le-description{
+		.le-description-headline{
+			padding: 20px 10px 0px 10px;
+    		font-size: 1.5em;
+		}
+		.le-description-text{
+			padding: 0px 10px 0px 10px;
+		}
+	}
+	.le-group{
+		padding: 20px 10px;	
+		#lezeile{
+			background-color: #d7d7d7;
+			padding: 5px;
+		}
+		#lezeile:nth-child(odd){
+			background-color: #e3e3e3;
+			padding: 5px;
+		}
+		.lezeile-company{
+			display: flex;
+			.lezeile-company-zip{
+				width: 120px;
+				display: flex;
+				div{
+					width: 20px;
+					text-align: center;
+				}
+			}
+			.lezeile-company-name{
+				margin-left: 52px;
+			}
+		}
+		.decimallist{
+			display: flex;
+			.decimallist-before{
+				width: 10%;	
+			}
+			.decimallist-inner{
+				.unitize(margin-bottom,10);
+				width: 90%;
+			}
+		}
+	}
+	.le-group-grey{
+		background-color: #e3e3e3; 
+		padding: 20px 10px;
+		li{
+			list-style-type: disc;
+			padding-bottom: 10px;	
+		}
+	}
+	.le-group-flex{
+		.leheader img{
+			width: 100%;
+			object-fit: cover;
+		}
+	}
+	#le-group-bold{
+		font-weight: 800;
+	}
+	#le-group-head{
+		padding-top: 30px;
+	}
+}
+
+#home-brown-button{
+		position: absolute;
+    	top: -1550px;
+   	 	width: 50%;
+    	right: 3%;
+	}
+
+@media screen and (min-width: @phoneLandscapeViewportWidth) {
+	.tauschzeit{
+		.leheader{
+			.lebanner-headline{
+				font-size: 3.25em;
+				left: 10%;
+			}
+			.lebanner-mobil{
+				img{
+					width: 100%;
+					object-fit: cover;
+    				object-position: center;
+    				height: 150vh;
+				}
+			}
+			.brown-button {
+				top: 4%;
+				left: 62%;
+				width: 30%;
+			}			
+		}
+		.le-group{	
+			#lezeile{
+				display: flex;
+			}
+			.lezeile-company{
+				width: 45%;
+				.lezeile-company-zip{
+					width: 55px;	
+				}
+				.lezeile-company-name{
+					margin-left: 0;
+				}
+			}
+		}
+	}
+	#home-brown-button{
+		position: absolute;
+    	top: -550px;
+   	 	width: 25%;
+    	right: 3%;
+	}
+}
+
+@media screen and (min-width: @tabletViewportWidth) {
+	.tauschzeit{
+		.leheader{
+			.lebanner-headline{
+				left: 25%;
+			}
+			.lebanner-mobil{
+				img{
+    				height: 74vh;
+				}
+			}
+			.brown-button {
+				top: 50%;
+				right: 26%;
+			}	
+		}
+	}
+}
+
+@media screen and (min-width: @tabletLandscapeViewportWidth) {
+	.tauschzeit{
+		.leheader{
+			.lebanner-mobil{
+				display: none;
+			}
+			.lebanner-desktop{
+				display: block;
+				background-image: url(https://revox.com/media/image/4d/3d/56/Revox_Standlautsprecher_Prestige_G140_Lautsprecher_Kategorie_1280x1280.jpg);
+				height: 94vh;
+    			background-repeat: no-repeat;
+    			background-size: cover;
+    			background-position: bottom;	
+			}
+			.lebanner-headline{
+				font-size: 5.55em;
+			}
+			.brown-button {
+				top: 40%;
+				left: 15%;
+				width: 25%;
+			}			
+		}
+		.le-group-flex{
+			display: flex;
+			.le-group-grey{
+				width: 69.8%;
+				.unitize-height(355);
+			}
+			.leheader img{
+				.unitize-height(355);	
+			}
+			#small{
+				width: 100%;
+				.unitize-height(100);
+			}
+		}
+			.le-group{
+				.decimallist{
+					.decimallist-before{
+						width: 4%;	
+					}
+					.decimallist-inner{
+						width: 95%;
+					}
+				}
+				.productshow{
+					display: flex;
+					justify-content: center;
+					img{
+						width: 60%;	
+					}
+				}
+			}
+	}
+	#home-brown-button{
+		position: absolute;
+    	top: -550px;
+   	 	width: 25%;
+    	right: 9%;
+	}
+}
+
+@media screen and (min-width: @desktopViewportWidth) {
+.tauschzeit{
+	.leheader{
+		.lebanner-headline{
+    		left: 33%;
+		}
+		.brown-button {
+			top: 38%;
+			left: 23%;
+			width: 15%;
+		}
+	}
+	.le-description{
+		padding: 50px;
+	}
+	.le-group{
+		padding: 60px;	
+		.decimallist{
+			.decimallist-before{
+				width: 2%;	
+			}
+			.decimallist-inner{
+				width: 97%;
+			}
+		}
+	}
+		.le-group-flex{
+			.le-group-grey{
+				.unitize-padding(60);
+				.unitize-height(490);
+				li{
+					padding-bottom: 20px;	
+				}
+				li:hover{
+					font-weight: bold;	
+				}
+			}
+			.leheader img{
+				.unitize-height(490);	
+			}
+			#small{
+				width: 100%;
+				height: fit-content;
+				height: -moz-fit-content;
+			
+			}
+		}
+	}
+	#home-brown-button{
+		position: absolute;
+    	top: -430px;
+   	 	width: 15%;
+    	right: 11%;
+	}
+
+}

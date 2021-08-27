@@ -1,0 +1,155 @@
+/* Allgemein */
+.bannerline{
+	position: absolute;
+	.unitize(top, -1450);
+	.unitize(left, 34);
+}
+
+.hometitle{
+  .emotion--html{
+	overflow: hidden;
+    .html--title{
+      .unitize-padding(25,20,0,20);
+      h1{
+        padding: 0px;
+        margin: 0px;
+      }
+    }
+    .html--content{
+      .unitize-padding(10,20,0,20);
+    }
+  }
+}
+
+.familytitle{
+  .emotion--html{
+    .html--title{
+      .unitize-padding(25,20,0,20);
+      h1{
+        padding: 0px;
+        margin: 0px;
+      }
+    }
+    .html--content{
+      .unitize-padding(10,20,0,20);
+    }
+  }
+}
+
+.greyback{
+	background-color: #e3e3e3;
+	padding-top: 50px;
+}
+
+.familyabstand{
+	.unitize-margin(0);	
+}
+
+@media screen and(min-width: @phoneLandscapeViewportWidth) {
+	/* Allgemein */
+	.bannerline{
+		position: absolute;
+		.unitize(top, -466);
+		.unitize(left, 19);
+	}
+}
+
+@media screen and(min-width: @tabletViewportWidth) {
+	/* Allgemein */
+	.bannerline{
+		.unitize(top, -1200);
+		.unitize(left, 35);
+	}
+	
+	.hometitle{
+	  .emotion--html{
+		.html--title{
+		  .unitize-padding(25,40,0,40);
+		}
+		.html--content{
+		  .unitize-padding(22,40,0,40);
+		}
+	  }
+	}
+	
+	.familytitle{
+	  .emotion--html{
+		.html--title{
+		  .unitize-padding(25,40,0,40);
+		}
+		.html--content{
+		  .unitize-padding(22,40,0,40);
+		}
+	  }
+	}
+}
+
+@media screen and(min-width: @tabletLandscapeViewportWidth) {
+	/* Allgemein */
+	.bannerline{
+		.unitize(top, -395);
+		left: 61%;
+	}
+	
+	.hometitle{
+	  .emotion--html{
+		display: flex;
+		.html--title{
+		  .unitize-padding(25,40,100,40);
+		}
+		.html--content{
+		  .unitize-padding(22,40,65,0);
+		}
+	  }
+	}
+	
+	.familytitle{
+	  .emotion--html{
+		.html--title{
+		  .unitize-padding(25,40,100,40);
+		}
+		.html--content{
+		  .unitize-padding(22,40,25,40);
+		}
+	  }
+	}
+	
+	.familyabstand{
+		.unitize-margin(25);	
+	}
+}
+
+@media screen and(min-width: @desktopViewportWidth) {
+	.bannerline{
+		.unitize(top, -270);
+	}
+	
+	.hometitle{
+	  .emotion--html{
+		.html--title{
+		  .unitize-padding(17,88,65,65);
+		  h1{
+			width: 240px;  
+			}
+		}
+		.html--content{
+		  .unitize-padding(22,65,100,0);
+		}
+	  }
+	}
+	
+	.familytitle{
+	  .emotion--html{
+		.html--title{
+		  .unitize-padding(17,88,65,65);
+		}
+		.html--content{
+		  .unitize-padding(22,65,25,65);
+		}
+	  }
+	}
+	
+	.familyabstand{
+		.unitize-margin(65);	
+	}
+}

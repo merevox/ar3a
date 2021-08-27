@@ -1,0 +1,362 @@
+.fruehjahr{
+	.fjheader{
+		position: relative;
+		.fjbanner-mobil{
+			img{
+				width: 100%;
+			}
+		}
+		.fjbanner-desktop{
+			display: none;	
+		}
+		.fjbanner-headline{
+			position: absolute;
+    		top: 2%;
+    		left: 2%;
+			width: 96%;
+    		font-weight: 800;
+    		font-size: 2.25em;
+    		background-color: rgba(255,255,255,0.7);
+			text-transform: uppercase;
+    		padding: 25px;
+			div{
+			 	font-size: 24px;
+    			font-weight: 300;
+			}
+		}
+		.fjbanner-headline-em{
+			position: absolute;
+    		top: 2%;
+    		left: 7%;
+			width: 96%;
+    		font-weight: 800;
+    		font-size: 2.25em;
+    		text-shadow: 2px 4px #000;
+    		padding: 25px;
+			
+			color: #fff;
+			div{
+			 	font-size: 19px;
+    			font-weight: 300;
+			}
+		}
+		.brown-button {
+			position: absolute;
+			top: 20%;
+			right: 17%;
+			width: 40%;
+		}
+		.brown-button-em {
+			position: absolute;
+			top: 27%;
+			right: 2%;
+			width: 30%;
+		}
+	}
+	.fj-group-flex{
+		padding: 5px;
+	}
+	.fj-description{
+		.fj-description-headline{
+			padding: 20px 10px 0px 10px;
+    		font-size: 1.5em;
+		}
+		.fj-description-text{
+			padding: 0px 10px 0px 10px;
+		}
+		iframe{ width: 100%; }
+	}
+	.fj-group{
+		padding: 20px 10px;	
+		#fjzeile{
+			background-color: #d7d7d7;
+			padding: 5px;
+		}
+		#fjzeile:nth-child(odd){
+			background-color: #e3e3e3;
+			padding: 5px;
+		}
+		.fjzeile-company{
+			display: flex;
+			.fjzeile-company-zip{
+				width: 120px;
+				display: flex;
+				div{
+					width: 20px;
+					text-align: center;
+				}
+			}
+			.fjzeile-company-name{
+				margin-left: 52px;
+			}
+		}
+		.decimallist{
+			display: flex;
+			.decimallist-before{
+				width: 10%;	
+			}
+			.decimallist-inner{
+				.unitize(margin-bottom,10);
+				width: 90%;
+			}
+		}
+	}
+	.fj-group-grey{
+		background-color: #e3e3e3; 
+		padding: 20px 10px;
+		li{
+			list-style-type: disc;
+			padding-bottom: 10px;	
+		}
+	}
+	#fj-group-bold{
+		font-weight: 800;
+	}
+	#fj-group-head{
+		padding-top: 30px;
+	}
+}
+
+#home-brown-button{
+		position: absolute;
+    	top: -1550px;
+   	 	width: 50%;
+    	right: 3%;
+	}
+
+@media screen and (min-width: @phoneLandscapeViewportWidth) {
+	.fruehjahr{
+		.fjheader{
+			.fjbanner-headline{
+				font-size: 3.25em;
+				width: 50%;
+			}
+			.fjbanner-mobil{
+				img{
+					width: 100%;
+					object-fit: cover;
+    				object-position: center;
+    				height: 150vh;
+				}
+			}
+			.brown-button {
+				top: 10%;
+				right: 8%;
+				width: 30%;
+			}			
+		}
+		.fj-group{	
+			#fjzeile{
+				display: flex;
+			}
+			.fjzeile-company{
+				width: 45%;
+				.fjzeile-company-zip{
+					width: 55px;	
+				}
+				.fjzeile-company-name{
+					margin-left: 0;
+				}
+			}
+		}
+	}
+	#home-brown-button{
+		position: absolute;
+    	top: -550px;
+   	 	width: 25%;
+    	right: 3%;
+	}
+}
+
+@media screen and (min-width: @tabletViewportWidth) {
+	.fruehjahr{
+		.fjheader{
+			.fjbanner-headline-em{
+				font-size: 3.25em;
+				width: 80%;
+			}
+			.fjbanner-mobil{
+				img{
+    				height: 74vh;
+				}
+			}
+			.brown-button {
+				top: 18%;
+				right: 26%;
+			}
+			.brown-button-em {
+				top: 19%;
+				right: 2%;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: @tabletLandscapeViewportWidth) {
+	.fruehjahr{
+		.fjheader{
+			.fjbanner-mobil{
+				display: none;
+			}
+			.fjbanner-desktop{
+				display: block;
+				background-image: url(https://revox.com/media/image/73/b2/e1/Revox-STUDOART-A100-Emotion-2-Multiroom_1920x1920.jpg);
+				height: 94vh;
+    			background-repeat: no-repeat;
+    			background-size: cover;
+    			background-position: bottom;	
+			}
+			.fjbanner-desktop-em{
+				display: block;
+				background-image: url(https://revox.com/media/image/e5/cb/d7/Revox-studioart-kategorie-s100_audiobar-soundbar-weiss-5-1_system-airplay2_1280x1280.jpg);
+				height: 94vh;
+    			background-repeat: no-repeat;
+    			background-size: cover;
+    			background-position: bottom;	
+			}
+			.fjbanner-headline{
+				font-size: 4.55em;
+			}
+			.fjbanner-headline-em{
+				top: 64%;
+				left: 4%;
+				font-size: 3.55em;
+				width: 70%;
+				div{
+					font-size: 24px;
+					font-weight: 300;
+				}
+			}
+			.brown-button {
+				top: 25%;
+				right: 15%;
+				width: 25%;
+			}
+			.brown-button-em {
+				width: 20%;
+			}
+		}
+		.fj-group-flex{
+			display: flex;
+			padding: 20px 5px;
+			div{
+				width: 100%;
+				img{
+					height: 400px;
+				}
+			}
+			.fj-header 
+			#small{
+				width: 100%;
+				.unitize-height(100);
+			}
+		}
+			.fj-group{
+				.decimallist{
+					.decimallist-before{
+						width: 4%;	
+					}
+					.decimallist-inner{
+						width: 95%;
+					}
+				}
+				.productshow{
+					display: flex;
+					justify-content: center;
+					img{
+						width: 60%;	
+					}
+				}
+			}
+	}
+	#home-brown-button{
+		position: absolute;
+    	top: -550px;
+   	 	width: 25%;
+    	right: 9%;
+	}
+	#fj-padding2{
+		padding-top: 30%;	
+	}
+	#fj-padding1{
+		padding-top: 7%;
+		padding-left: 7%;
+	}
+}
+
+@media screen and (min-width: @desktopViewportWidth) {
+.fruehjahr{
+	.fjheader{
+		.fjbanner-headline{
+    		left: 6%;
+			top: 33%;
+			width: 45%;
+		}
+		.fjbanner-headline-em{
+    		left: 6%;
+			top: 60%;
+			font-size: 4.55em;
+			width: 45%;
+		}
+		.brown-button {
+			top: 10%;
+			right: 10%;
+			width: 15%;
+		}
+		.brown-button-em {
+				top: 8%;
+				right: 10%;
+				width: 15%;
+			}
+	}
+	.fj-description{
+		padding: 50px 9%;
+		div{
+			width: 100%;
+		}
+	}
+	.fj-group{
+		padding: 60px;	
+		.decimallist{
+			.decimallist-before{
+				width: 2%;	
+			}
+			.decimallist-inner{
+				width: 97%;
+			}
+		}
+	}
+		.fj-group-flex{
+			padding: 0px;
+			.fj-group-grey{
+				padding: 50px 3%;
+				li{
+					padding-bottom: 20px;	
+				}
+				li:hover{
+					font-weight: bold;	
+				}
+			}
+			#small{
+				width: 100%;
+				height: fit-content;
+				height: -moz-fit-content;
+			
+			}
+			div{
+				width: 100%;
+				padding: 3%;
+			}
+		}
+	}
+	#home-brown-button{
+		position: absolute;
+    	top: -430px;
+   	 	width: 15%;
+    	right: 11%;
+	}
+	#fj-padding2{
+		padding-top: 15%;	
+	}
+
+}

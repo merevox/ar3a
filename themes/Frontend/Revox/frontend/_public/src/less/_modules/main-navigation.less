@@ -1,0 +1,68 @@
+.navigation-main{
+  background: transparent;
+  z-index: 2;
+  font-weight: 400;
+  .container{
+    background: transparent;
+  }
+  .is--active .navigation--link {
+    text-shadow: 0.4px 0 0 #000000;
+    font-weight: 400;
+    color: #000000;
+    text-decoration: underline;
+    text-underline-position: under;
+    &:hover { color: #000000; }
+  }
+}
+
+@media screen and (min-width: @phoneLandscapeViewportWidth) {
+
+}
+
+@media screen and (min-width: @tabletViewportWidth) {
+  .navigation-main{
+    display: inline-flex;
+    border-bottom: none;
+    float: right;
+    padding-top: 1%;
+    width: 100%;
+    .navigation--link { 
+    	.unitize-padding(8);
+		.unitize(font-size, 14);
+	 }
+    .is--active{
+      .navigation--link{
+        background-image: none;
+        background-color: #ffffff;
+        color: @brand-primary;
+      }
+    }
+  }
+  img.RevoxSidebarSocialImage{
+    .unitize(width, 20);
+    .unitize(height, 20);
+    .unitize(margin-bottom, -9);
+  }
+}
+
+@media screen and (min-width: @tabletLandscapeViewportWidth) {
+   .navigation-main{
+     .navigation--link {
+    	.unitize-padding(8, 10, 8, 10);
+	 }
+   }
+}
+
+@media screen and (min-width: @desktopViewportWidth) {
+  .navigation-main {
+    padding-top: 0%;
+    .unitize(margin-top, -28);
+    .unitize(margin-right, 173);
+    max-width: max-content;
+    .navigation--link{
+	  :hover{
+		text-shadow: 0.4px 0 0 #000000;
+	  }
+	}
+  }
+}

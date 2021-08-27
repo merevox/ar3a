@@ -1,0 +1,182 @@
+.category-fading-desktop{
+  display: none;
+}
+.category-fading-desktop,
+.category-fading-mobile{
+  position: relative;
+  .category-fading-menu{
+    z-index: 1;
+    width: 100%;
+    background-color: rgba(255,255,255,0.9);
+    .unitize-padding(17, 10, 30, 10);
+    min-height: 67vh;
+    position: absolute;
+    margin-top: 12%;
+  }
+  .slideshow-container{
+    position: relative;
+    .mobilebild{
+      height: 100vh;
+      width: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+}
+
+.category-fading-desktop-test{
+	position: relative;
+	.category-background{
+		img{
+			position: fixed;
+		}
+	}
+	.category-fading-menu{
+		position: relative;
+      	background-color: rgba(255,255,255,0.9);
+      	max-width: max-content;
+      	min-height: 100%;
+	}
+}
+
+#listing-fading-controls {
+    .unitize-margin(0, 0, 0, 30);
+  p{
+    text-align:left;
+  }
+  h3:after {
+	content: " > >";
+	color: transparent;
+  }
+  h3.active{
+	color: #000;
+	text-shadow: 0.4px 0 0 #000000;  
+  }
+  a {
+    cursor: pointer;
+    :hover{
+		text-shadow: 0.4px 0 0 #000000;
+		:after {
+      		color: #000;
+		}
+    }
+  }
+  h2:hover {
+    text-shadow: 0.4px 0 0 #000000;
+  }
+}
+
+
+
+@media screen and(min-width: @phoneLandscapeViewportWidth) {
+  .category-fading-mobile{
+    .category-fading-menu {
+      width: max-content;
+      background-color: rgba(255,255,255,0.9);
+      min-height: 71vh;
+      margin-top: 0;
+    }
+    .slideshow-container{
+      .mobilebild{
+        height: 150vh;
+      }
+    }
+  }
+  #imagefadingdesktop,
+  #imagefadingmobile{
+    padding-top: 0;
+    padding-bottom: 0;
+    min-height: 71vh;
+  }
+}
+
+@media screen and(min-width: @tabletViewportWidth) {
+  .category-fading-mobile {
+    display: block;
+    .category-fading-menu {
+      min-height: 79vh;
+      .unitize-padding(50, 24, 0, 24);
+    }
+    .slideshow-container{
+      .mobilebild{
+        height: 79vh;
+        object-position: right;
+      }
+    }
+  }
+
+  #listing-fading-controls{
+    .unitize-padding(10,0,0,0);
+    h3{
+      .unitize(margin-left,30);
+    }
+  }
+}
+
+@media screen and(min-width: @tabletLandscapeViewportWidth) {
+  .category-fading-mobile{
+    .category-fading-menu {
+      min-height: 86vh;
+      .unitize-padding(50, 70, 0, 70);
+    }
+    .slideshow-container{
+      .mobilebild{
+        height: 86vh;
+      }
+    }
+  }
+}
+
+@media screen and(min-width: @desktopViewportWidth) {
+  .category-fading-mobile{
+    display: none;
+  }
+  .category-fading-desktop {
+    display: block;
+	position: relative;
+    .category-fading-menu {
+      min-height: 94vh;
+      width: max-content;
+      position: relative;
+      .unitize-padding(50, 50, 0, 100);
+      margin-top: 0;
+    }
+	#categorybackgroundpicture{
+	  width: 100%;
+	  height: 100vh;
+	  position: absolute;
+	  top: 0;
+	  background-attachment: fixed;
+	  background-position: center right;
+	  background-size: cover;
+	}
+  }
+  #listing-fading-controls{
+    .subcategories{
+		overflow: hidden;
+	}
+  }
+  #backgroundlink{
+	.desktopbild{
+		display: block;
+	}
+	.mobilebild{
+		display: none;
+	}
+  }
+	
+	.category-fading-desktop-test{
+	position: relative;
+	.category-background{
+		img{
+			position: fixed;
+		}
+	}
+	.category-fading-menu{
+		position: relative;
+      	background-color: rgba(255,255,255,0.9);
+      	max-width: max-content;
+      	min-height: 100%;
+	}
+}
+}

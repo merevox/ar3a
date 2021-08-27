@@ -1,0 +1,1137 @@
+.product--details {
+  .product--header {
+    padding: 0;
+  }
+  .buybox--form {
+    width: 100%;
+  }
+}
+
+.detail-revox-headerholder-desktop{
+  display: none;
+}
+
+.detail-revox-headerholder-mobile{
+
+  .detail-revox-sellersidebar {
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 100%;
+    padding: 2vh 3vw 2vh 3vw;
+  }
+}
+
+.detail-revox-headerholder-desktop {
+  min-height: 190vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  background-position: center;
+}
+
+.detail-revox-headerholder-desktop,
+.detail-revox-headerholder-mobile{
+  .detail-revox-headerholder-mobile-image{
+    .artikelimage{
+      height: 32vh;
+      width: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+  .detail-revox-sellersidebar{
+    background-color: rgba(255,255,255,0.9);
+    width: 100%;
+    padding: 2vh 3vw 2vh 3vw;
+    .detail-revox-sellersidebar-inner{
+      width: 100%;
+      .detail-revox-sellersidebar-headline {
+        .unitize-padding(0, 5, 0, 5);
+        border-bottom: 0.5px dotted #000000;
+		.unitize(margin-bottom, 30);
+        h1 {
+          width: 100%;
+        }
+		h3:hover{
+		  text-shadow: 0.4px 0 0 #000;
+		  ::after {
+		  	content: " > >";
+		  }
+		}
+        p {
+          text-align: justify;
+        }
+        .technical-icons-header{
+          display: inline-flex;
+          flex-wrap: wrap;
+          img{
+            .unitize-height(24);
+            .unitize(max-width,90);
+            .unitize-margin(0,20,20,0);
+            filter: grayscale(0.7);
+            -webkit-filer: grayscale(0.7);
+          }
+        }
+      }
+      .detail-revox-sellersidebar-content {
+		position: relative;
+        .product--detail-upper {
+          .product--buybox {
+            width: 100%;
+
+            .buybox--inner {
+              .unitize-padding(0, 5, 10, 5);
+            }
+
+            .sellerhiglights {
+              display: flex;
+              border-bottom: 0.5px dotted #000000;
+              .unitize(padding-bottom, 30);
+              .unitize(font-size, 11);
+              .unitize(margin-bottom, 30);
+
+              div {
+                display: flex;
+
+                img {
+                  .unitize-width(26);
+                  .unitize-height(20);
+                  .unitize-padding(5, 12, 0, 0);
+                }
+
+                span {
+                  display: flex;
+                  align-items: flex-end;
+                  .unitize-margin(0, 10, 0, -6);
+                }
+              }
+            }
+
+            .base-info--entry {
+              .unitize-padding(16, 5, 10, 5);
+
+              .entry--content {
+                display: block;
+                border-bottom: .5px dotted #000;
+                .unitize-margin(0, 0, 30, 0);
+                .unitize-padding(0, 0, 30, 0);
+
+                .tr {
+                  display: flex;
+
+                  .tester {
+                    width: 65%;
+                    font-weight: 700;
+                  }
+                }
+              }
+
+              .buybox-sellerfinder {
+                display: flex;
+                justify-content: left;
+                clear: both;
+
+                img {
+                  .unitize-width(26);
+                  .unitize-height(26);
+                }
+
+                span {
+                  display: flex;
+                  align-items: flex-end;
+                  .unitize-margin(0, 10, 0, 0);
+                }
+              }
+            }
+
+            .ShortDescriptionForMobile {
+              border-bottom: .5px dotted #000;
+              margin: 0rem 0rem 1.875rem 0rem;
+              p {
+                text-align: justify;
+              }
+
+              .technical-icons-header {
+                display: inline-flex;
+                flex-wrap: wrap;
+
+                img {
+                  .unitize-height(24);
+                  .unitize(max-width, 90);
+                  .unitize-margin(0, 20, 20, 0);
+                  filter: grayscale(0.7);
+                  -webkit-filer: grayscale(0.7);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .detail-revox-sellersidebar-footer{
+      .unitize-padding(0,5,0,5);
+      display: flex;
+      img{
+        .unitize-width(26);
+        .unitize-height(26);
+      }
+      span{
+        display: flex;
+        align-items: flex-end;
+        .unitize-margin(0,10,0,-6);
+      }
+    }
+  }
+}
+
+// Product configurator
+.configurator--label{
+  float: left;
+  clear: both;
+  font-weight: 500;
+}
+.product--details {
+  .alert{
+	width: 100%;  
+  }
+  .product--buybox{
+    .product--price{
+      display: block;
+	  position: relative;
+	  .price--unit {
+    	top: -16px;
+    	right: -66%;
+		width: max-content;
+	  }
+	  .summertime{
+		display: none;
+	    position: absolute;
+    	width: 45%;
+    	right: -7%;
+    	top: -60px;
+	  }
+    }
+  }
+  .buybox--quantity{
+    clear: both;
+    width: 100%;
+  }
+  .buybox--button{
+    width: 100%;
+  }
+  .configurator--form .select-field,
+  .buybox--quantity .select-field{
+    max-width: 55%;
+    float: right;
+    .unitize-height(27);
+    .unitize(margin-bottom, 20);
+    select {
+      font-size: unset;
+      font-weight: unset;
+      background-image: none;
+      border: none;
+      border-bottom: 1px dotted #000000;
+      .unitize(border-top-left-radius, 2);
+      .unitize(border-top-right-radius, 2);
+      .unitize(border-bottom-left-radius, 0);
+      .unitize(border-bottom-right-radius, 0);
+      background-color: transparent;
+    }
+    &:after {
+      border-left: none;
+      top: unset;
+      .unitize(bottom, 4);
+    }
+    :hover {
+      background-color: #e3e3e3;
+    }
+  }
+}
+
+.mobile-absolute {
+  /*Auswahlliste*/
+  .detail-revox-jumperline {
+    display: flex;
+    .unitize-padding(10, 10, 10, 10);
+    background-color: #e3e3e3;
+    width: 100%;
+    justify-content: center;
+	position:sticky;
+	top: 0;
+	z-index: 1001;
+	border-bottom: 1px solid #bbb;
+    .detail-revox-innerjumperline {
+      display: none;
+    }
+  }
+
+  /*Übersicht*/
+  .detail-revox-overview {
+    .unitize-padding(10);
+    .detail-revox-overview-description {
+      text-align: justify;
+      .product--description {
+		iframe {
+		  float: left;
+		  .unitize-margin(0,25,25,0);
+		}
+        .video-preview-image {
+          width:100%;
+          .unitize-height(250);
+          background-size: cover;
+		  -moz-background-size: cover;
+		  -webkit-background-size: cover;
+          -o-background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+          .unitize-margin(0, 0, 30, 0);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          img {
+            .unitize-width(100);
+            .unitize-height(100);
+          }
+        }
+        .technical-spring-icons{
+          display: none;
+        }
+      }
+    }
+    /*Bildslieder*/
+    .detail-revox-overview-image {
+      .product--image-container {
+        width: 100%;
+        float: none;
+        .image-slider--thumbnails {
+          display: none;
+        }
+      }
+      .image-slider--dots {
+        padding-left: 0;
+      }
+    }
+    .detail-revox-inner-overview {
+      display: flex;
+      .unitize-padding(80);
+      .detail-revox-inner-headline {
+        h1 {
+          .unitize-margin(0,60,0,0);
+        }
+      }
+    }
+  }
+
+  /*features*/
+  .detail-revox-benefits-desktop{
+    display: none;
+  }
+
+  .detail-revox-benefits-desktop,
+  .detail-revox-benefits-mobile{
+    .detail-revox-inner-overview {
+      width: 100%;
+      .unitize-padding(28,10,10,10);
+      background-color: rgba(255, 255, 255, 0.7);
+      .detail-revox-inner-headline {
+        h1 {
+          .unitize-margin(0,60,0,0);
+        }
+      }
+    }
+  }
+  #benefitsm{
+    background-repeat: no-repeat;
+    background-size: cover;
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
+	-o-background-size: cover;
+    background-position: center;
+  }
+
+  #benefits{
+    background-repeat: no-repeat;
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+  /*360 Ansicht*/
+  .detail-revox-360 {
+    .detail-revox-inner-overview {
+      display: flex;
+      .detail-revox-inner-headline {
+        h1 {
+          .unitize-margin(0,60,0,0);
+        }
+      }
+      .detail-revox-inner-description {
+        width: 100%;
+      }
+    }
+  }
+
+  /*Zubehör*/
+  .detail-revox-equipment {
+	background-color: #e3e3e3;
+    .detail-revox-inner-overview {
+      .detail-revox-inner-headline {
+        display: none;
+      }
+    }
+  }
+  .tab-menu--cross-selling {
+      .tab--header {
+          &.is--active {
+              border: none;
+              .tab--title:after {
+                  content: @sw-icon-arrow-up;
+              }
+          }
+      }
+
+      .tab--title {
+          h1{
+            margin: 1.25rem 3.75rem 0.75rem 0rem;
+          }
+          &:after {
+            background-color: #000;
+            width: 40px;
+            height: 40px;
+            color: #FFF;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 20px;
+            font-size: 10px;
+            content: @sw-icon-arrow-down;
+            right: 14px;
+            top: 29px;
+          }
+      }
+  }
+
+  /*Technische Details*/
+  .detail-revox-technical-desktop{
+    display: none;
+  }
+
+  .detail-revox-technical-desktop,
+  .detail-revox-technical-mobile{
+    .detail-revox-inner-overview {
+      .unitize-padding(28,10,0,10);
+      background-color: rgba(255, 255, 255, 0.7);
+	  &.active{
+		.unitize-padding(28,10,60,10);
+      	.detail-revox-inner-headline {
+	    	a{
+				&:after{
+					content: @sw-icon-arrow-up;
+				}
+			}
+		}
+	  }
+      .detail-revox-inner-headline {
+        a{
+		        padding: 0px 60px 0px 0px;
+    	      position: relative;
+            display: block;
+    	      font-family: shopware;
+		        h1 {
+              .unitize-margin(0,60,20,0);
+            }
+		        &:after{
+        			background-color: #000;
+        			width: 40px;
+        			height: 40px;
+        			color: #FFF;
+        			display: flex;
+        			justify-content: center;
+        			align-items: center;
+        			border-radius: 20px;
+        			font-size: 10px;
+        			content: @sw-icon-arrow-down;
+        			right: 4px;
+        			top: -9px;
+          		position: absolute;
+      		  }
+		     }
+      }
+      .detail-revox-inner-description {
+        .technical-label {
+          .unitize-padding(15, 0, 0, 0);
+          .unitize-margin(0, 0, 15, 0);
+		  border-bottom: 0.5px dotted #000000;
+		  .technical-icons{
+			 display: inline-flex;
+             flex-wrap: wrap;
+		  	 img{
+			 	.unitize-height(35);
+    			.unitize-margin(0,20,20,0);
+				filter: grayscale(0.7);
+				-webkit-filer: grayscale(0.7);
+			 }
+		  }
+        }
+      }
+    }
+  }
+  #technical {
+    background-repeat: no-repeat;
+    background-size: cover;
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
+	-o-background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    background-position: 100%;
+  }
+
+  #technicalmDesc {
+	overflow: hidden;
+	position: relative;
+	max-height: 1px;
+  }
+
+  /*Bedienung*/
+  .detail-revox-manuals {
+	background-color: #e3e3e3;
+    .detail-revox-inner-overview {
+      .unitize-padding(28,10,0,10);
+	  &.active{
+		.unitize-padding(28,10,60,10);
+      	.detail-revox-inner-headline {
+	    	a{
+				&:after{
+					content: @sw-icon-arrow-up;
+				}
+			}
+		}
+	  }
+      .detail-revox-inner-headline {
+        a{
+		padding: 0px 60px 0px 0px;
+    	position: relative;
+    	display: block;
+    	font-family: shopware;
+		  h1 {
+            .unitize-margin(0,60,20,0);
+          }
+		  &:after{
+			background-color: #000;
+			width: 40px;
+			height: 40px;
+			color: #FFF;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border-radius: 20px;
+			font-size: 10px;
+			content: @sw-icon-arrow-down;
+			right: 4px;
+			top: -9px;
+    		position: absolute;
+		  }
+		 }
+		 .desktop--headline{
+			display: none;
+		 }
+      }
+      .detail-revox-inner-description {
+        width: 100%;
+        .inner-manuals-entry {
+          .unitize(min-height, 200);
+          .unitize-padding(40, 20, 30, 20);
+          .unitize-margin(20, 0, 0, 0);
+          border: 1px solid #bbb;
+          align-content: center;
+          p {
+            justify-content: center;
+            display: flex;
+			text-align: center;
+            img {
+              .unitize(margin-top, 15);
+            }
+          }
+        }
+        .inner-manuals-entry:hover {
+          border: 1px solid #000000;
+        }
+      }
+    }
+  }
+
+  #manualsDesc {
+	overflow: hidden;
+	position: relative;
+	max-height: 1px;
+  }
+
+  /*Testberichte*/
+  .detail-revox-test {
+    .detail-revox-inner-overview {
+      .unitize-padding(28,10,0,10);
+	  &.active{
+		.unitize-padding(28,10,60,10);
+      	.detail-revox-inner-headline {
+	    	a{
+				&:after{
+					content: @sw-icon-arrow-up;
+				}
+			}
+		}
+	  }
+      .detail-revox-inner-headline {
+        a{
+		padding: 0px 60px 0px 0px;
+    	position: relative;
+    	display: block;
+    	font-family: shopware;
+		  h1 {
+            .unitize-margin(0,60,20,0);
+          }
+		  &:after{
+			background-color: #000;
+			width: 40px;
+			height: 40px;
+			color: #FFF;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border-radius: 20px;
+			font-size: 10px;
+			content: @sw-icon-arrow-down;
+			right: 4px;
+			top: -9px;
+    		position: absolute;
+		  }
+		 }
+		 .desktop--headline{
+			display: none;
+		 }
+      }
+      .detail-revox-inner-description {
+        width: 100%;
+        .zelle {
+          border: 1px solid #000000;
+          .unitize-padding(15);
+          .unitize-margin(20, 0, 0, 0);
+          p {
+            font-size: 11px;
+          }
+          .test--head,
+          .test-grades {
+            font-weight: 700;
+          }
+          img{
+            float: left;
+            .unitize-margin(0,10,10,0);
+          }
+        }
+      }
+    }
+  }
+
+  #testDesc {
+	overflow: hidden;
+	position: relative;
+	max-height: 1px;
+  }
+
+  #withvidright{
+	width: 100%;
+  }
+
+  #withvidleft{
+	width: 100%;
+  }
+}
+
+@media screen and(min-width: @phoneLandscapeViewportWidth) {
+  .detail-revox-headerholder-mobile{
+    .detail-revox-sellersidebar {
+      .detail-revox-sellersidebar-inner {
+        .detail-revox-sellersidebar-headline {
+          h1 {
+            .unitize(padding-top, 12);
+          }
+        }
+      }
+    }
+  }
+
+  .product--details {
+	  .product--buybox{
+		.product--price{
+		  .price--unit {
+			right: -81%;
+		  }
+		  .summertime{
+			position: absolute;
+			width: 30%;
+			right: 5%;
+			top: -70px;
+		  }
+		}
+	  }
+	}
+
+  .mobile-absolute {
+    /*Bedienung*/
+    .detail-revox-manuals {
+      .detail-revox-inner-overview {
+        .detail-revox-inner-description {
+          width: 100%;
+		      display: block;
+          flex-wrap: wrap;
+          justify-content: center;
+          .inner-manuals-entry {
+            .unitize(height, 220);
+            .unitize-margin(20, 10, 20, 10);
+          }
+        }
+      }
+    }
+
+    /*Testberichte*/
+    .detail-revox-test {
+      .detail-revox-inner-overview {
+        .detail-revox-inner-description {
+          width: 100%;
+		      display: block;
+          flex-wrap: wrap;
+          justify-content: center;
+          .zelle {
+            .unitize-margin(20, 10, 0, 10);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and(min-width: @tabletViewportWidth) {
+  .detail-revox-headerholder-desktop,
+  .detail-revox-headerholder-mobile{
+    .detail-revox-sellersidebar {
+      top: 51%;
+    }
+  }
+
+  .product--details {
+	  .product--buybox{
+		.product--price{
+		  .summertime{
+			width: 25%;
+		  }
+		}
+	  }
+	}
+
+  .mobile-absolute {
+    /*Übersicht*/
+    .detail-revox-overview {
+      .detail-revox-overview-description {
+        .product--description {
+          .technical-spring-icons{
+            display: inline-flex;
+            flex-wrap: wrap;
+            width: 50%;
+            img{
+              .unitize-height(40);
+              filter: grayscale(0.7);
+              .unitize-margin(0,20,20,0);
+            }
+          }
+          .video-preview-image {
+            width:50%;
+            .unitize-margin(0, 30, 30, 0);
+            float: left;
+          }
+        }
+      }
+    }
+
+    /*features*/
+    .detail-revox-benefits-desktop,
+    .detail-revox-benefits-mobile{
+      .detail-revox-inner-overview {
+        width: 50%;
+        background-color: rgba(255, 255, 255, 0.8);
+      }
+    }
+
+    /*Zubehör*/
+    .detail-revox-equipment {
+      .detail-revox-inner-overview {
+        padding: 1.75rem .625rem 3.75rem .625rem;
+        .detail-revox-inner-headline {
+          display: block;
+            h1{
+              margin: 0rem 3.75rem 1.25rem 0rem;
+            }
+        }
+      }
+    }
+
+    /*Technische Details*/
+    .detail-revox-technical-desktop,
+    .detail-revox-technical-mobile{
+      .detail-revox-inner-overview {
+	  .unitize-padding(28,10,60,10);
+	    .detail-revox-inner-headline {
+	    	a{
+				&:after{
+					display: none;
+				}
+			}
+		}
+        .detail-revox-inner-description {
+          width: 100%;
+          display: inline-flex;
+          flex-wrap: wrap;
+          .technical-label {
+            .unitize-margin(0, 10, 15, 10);
+            width: 30%;
+          }
+        }
+      }
+    }
+
+    /*Bedienung*/
+    .detail-revox-manuals {
+      .detail-revox-inner-overview {
+		.unitize-padding(28,10,60,10);
+	    .detail-revox-inner-headline {
+	    	a{
+				display: none;
+			}
+			.desktop--headline{
+				display: block;
+			}
+		}
+        .detail-revox-inner-description {
+          width: 100%;
+          display: inline-flex;
+          flex-wrap: wrap;
+          justify-content: center;
+
+          .inner-manuals-entry {
+            .unitize-margin(20, 10, 20, 10);
+            .unitize-width(218);
+          }
+        }
+      }
+    }
+
+    /*Tests*/
+    .detail-revox-test {
+      .detail-revox-inner-overview {
+		.unitize-padding(28,10,60,10);
+	    .detail-revox-inner-headline {
+	    	a{
+				display: none;
+			}
+			.desktop--headline{
+				display: block;
+			}
+		}
+		.detail-revox-inner-description {
+          display: inline-flex;
+          .zelle {
+            width: 45%;
+          }
+        }
+      }
+    }
+	#technicalmDesc {
+		max-height: none !important;
+	}
+	#manualsDesc {
+		max-height: none !important;
+	}
+	#testDesc {
+		max-height: none !important;
+	}
+  }
+}
+
+@media screen and(min-width: @tabletLandscapeViewportWidth) {
+  .detail-revox-headerholder-mobile{
+    display: none;
+  }
+
+  .detail-revox-headerholder-desktop{
+    display: block;
+    min-height: 94vh;
+    background-position: left bottom;
+
+    .detail-revox-sellersidebar {
+      min-height: 94vh;
+      .unitize-width(500);
+      margin-left: auto;
+      position: unset;
+      top: unset;
+      margin-left: auto;
+      display: flex;
+      align-items: center;
+    }
+  }
+
+	.product--details {
+	  .product--buybox{
+		.product--price{
+		  .price--unit {
+			right: -74%;
+		  }
+		  .summertime{
+			position: absolute;
+			width: 40%;
+			right: 0%;
+			top: -70px;
+		  }
+		}
+        .ShortDescriptionForMobile {
+          display: none;
+        }
+	  }
+	}
+
+  .mobile-absolute {
+    /*Auswahlliste*/
+
+    .detail-revox-jumperline {
+      .detail-revox-innerjumperline {
+        display: block;
+        a {
+          float: left;
+          .jumpline-entry {
+            .unitize-padding(0, 20, 0, 20);
+            h3 {
+              line-height: 0px;
+              .unitize-margin(17, 0, 10, 0);
+              .unitize(font-size, 15);
+            }
+          }
+        }
+      }
+
+      .detail-revox-innerjumperline-mobil {
+        display: none;
+      }
+    }
+
+    /*Übersicht*/
+
+    .detail-revox-overview {
+      display: flex;
+
+      .detail-revox-overview-description {
+        .product--description {
+          .video-preview-image {
+            .unitize-width(400);
+            .unitize-margin(0, 40, 30, 0);
+          }
+        }
+
+        /*Bildslider*/
+
+        .detail-revox-overview-image {
+          float: right;
+          width: 50%
+        }
+
+        .detail-revox-inner-overview {
+          .detail-revox-inner-headline {
+            h1 {
+              .unitize-width(500);
+            }
+          }
+        }
+      }
+    }
+    .detail-revox-benefits-desktop{
+      display: block;
+    }
+    .detail-revox-benefits-mobile{
+      display: none;
+    }
+    .detail-revox-technical-desktop{
+      display: block;
+    }
+    .detail-revox-technical-mobile {
+      display: none;
+    }
+	#withvidright{
+		width: 52%;
+	}
+	#withvidleft{
+		width: 48%;
+	}
+	  
+	#jumpline-overview,
+	#jumpline-features,
+	#jumpline-threesixteen,
+	#jumpline-combination,
+	#jumpline-equipment,
+	#jumpline-technical,
+	#jumpline-manuals,
+	#jumpline-test{
+		:hover{
+			text-shadow: 0.4px 0 0 #000000;
+		}
+	}
+  }
+}
+
+@media screen and(min-width: @desktopViewportWidth) {
+  .product--details {
+	  .product--buybox{
+		.product--price{
+		  .price--unit {
+			right: -70%;
+		  }
+		  .summertime{
+			position: absolute;
+			width: 50%;
+			right: -7%;
+			top: -80px;
+		  }
+		}
+	  }
+	}
+	  
+  .mobile-absolute{
+    /*übersicht*/
+    .detail-revox-overview {
+     .unitize-padding(80);
+    }
+
+    /*Features*/
+    .detail-revox-benefits-desktop{
+      .detail-revox-inner-overview{
+        .unitize-width(580);
+        .unitize-padding(80);
+        background-color: rgba(255,255,255,0.9);
+        .detail-revox-inner-headline {
+          h1 {
+            .unitize-width(500);
+			.unitize-margin(0);
+          }
+        }
+        .detail-revox-inner-description {
+          h4 {
+            .unitize(padding-left,21);
+          }
+        }
+      }
+    }
+
+    /*Zubehör*/
+    .detail-revox-equipment {
+      .detail-revox-inner-overview {
+        display: flex;
+        padding: 5rem;
+        .detail-revox-inner-headline {
+          display: block;
+            h1{
+              width: 31.25rem;
+              margin: 0rem;
+            }
+        }
+      }
+    }
+    .box--slider{
+      margin-right: 150px;
+    }
+
+    /*Technische Details*/
+    .detail-revox-technical-desktop{
+      .detail-revox-inner-overview {
+        display: flex;
+        .unitize-padding(80);
+        background-color: rgba(255,255,255,0.9);
+        .detail-revox-inner-headline {
+          h1 {
+            .unitize-width(500);
+			      .unitize-margin(0);
+          }
+        }
+        .detail-revox-inner-description {
+          .technical-label{
+            padding: 0;
+            .unitize-margin(0,20,20,0);
+            .unitize(min-width, 230);
+          }
+        }
+      }
+    }
+
+    .detail-revox-manuals{
+      .detail-revox-inner-overview {
+        display: flex;
+        .unitize-padding(80);
+        .detail-revox-inner-headline {
+          h1 {
+            .unitize-width(500);
+			.unitize-margin(0);
+          }
+        }
+        .detail-revox-inner-description {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: left;
+          .inner-manuals-entry{
+            min-height: 0;
+            .unitize-width(270);
+            .unitize-margin(0,20,20,0);
+            align-content: center;
+          }
+        }
+      }
+    }
+
+    .detail-revox-test{
+      .detail-revox-inner-overview {
+        display: flex;
+        .unitize-padding(80);
+        .detail-revox-inner-headline {
+          h1 {
+            .unitize-width(500);
+			.unitize-margin(0);
+          }
+        }
+
+        .detail-revox-inner-description {
+          display: block;
+          flex-wrap: unset;
+          justify-content: unset;
+          .zelle{
+            .unitize-margin(0,20,20,0);
+            float: left;
+            .unitize-height(400);
+            overflow: hidden;
+          }
+        }
+      }
+    }
+    #breite-eins{
+      .unitize-width(286);
+      .unitize(max-width, 286);
+    }
+
+    #breite-zwei{
+      .unitize-width(592);
+      .unitize(max-width, 592);
+    }
+
+  }
+}

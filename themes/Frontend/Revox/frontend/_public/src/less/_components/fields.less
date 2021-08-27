@@ -1,0 +1,16 @@
+textarea,
+input[type="text"],
+input[type="search"],
+input[type="password"],
+input[type="number"],
+input[type="email"],
+input[type="tel"] {
+  background: @input-bg;
+  border: 1px solid @input-border;
+
+  &:focus {
+    border-color: @input-border;
+    background: @input-bg;
+  }
+}
+

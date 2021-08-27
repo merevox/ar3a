@@ -1,0 +1,108 @@
+#listingfadingcontrols-family {
+  .unitize-margin(0, 0, 0, 30);
+  p{
+    text-align:left;
+  }
+  h3:after {
+	content: " > >";
+	color: transparent;
+  }
+  h3.active{
+	color: #000;
+	text-shadow: 0.4px 0 0 #000000;  
+  }
+  a {
+    cursor: pointer;
+    :hover{
+		text-shadow: 0.4px 0 0 #000000;
+		:after {
+      		color: #000;
+		}
+    }
+  }
+  h2:hover {
+    text-shadow: 0.4px 0 0 #000000;
+  }
+  summary::-webkit-details-marker{
+    display:none;
+  }
+  details summary {
+    h2::after{content: " +";}
+  }
+  details[open] summary{
+    h2::after{content: " -";}
+  }
+}
+
+#imagefadingdesktop-family{
+  width: 100%;
+  min-height: 94vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-position: center;
+}
+
+#familyfadingdesktop{
+  position: relative;
+  height: 93vh;
+  .categoryfadingmenu-family{
+	top: 0;
+	left: 0;
+    min-height: 67vh;
+	background-color: rgba(255,255,255,0.9);
+    width: 100%;
+    position: absolute;
+    .unitize-padding(50, 25, 0, 25);
+    margin-top: 12%;
+  }
+}
+
+
+@media screen and (min-width: @phoneLandscapeViewportWidth) {
+	#familyfadingdesktop{
+	  .categoryfadingmenu-family{
+		width: max-content;
+		min-height: 94vh;
+		margin-top: 0;
+		.unitize-padding(0, 25, 0, 25);
+	  }
+	}
+	
+	#imagefadingdesktop-family{
+	  background-position: center top;
+	}
+}
+
+@media screen and (min-width: @tabletViewportWidth) {
+	#familyfadingdesktop{
+	  .categoryfadingmenu-family{
+		.unitize-padding(50, 50, 0, 50);
+	  }
+	}
+	
+	#imagefadingdesktop-family{
+	  background-attachment:fixed;
+	}
+}
+
+@media screen and (min-width: @tabletLandscapeViewportWidth) {
+	#familyfadingdesktop{
+	  height: 85vh;
+	}
+	
+	#imagefadingdesktop-family{
+	  background-position: center right;
+	}
+}
+
+@media screen and (min-width: @desktopViewportWidth) {
+	#familyfadingdesktop{
+	  height: 93vh;
+	  .categoryfadingmenu-family{
+		.unitize-padding(50, 50, 0, 100);
+	  }
+	}
+}

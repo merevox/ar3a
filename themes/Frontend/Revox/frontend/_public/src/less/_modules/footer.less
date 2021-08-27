@@ -1,0 +1,256 @@
+.footer-main,
+.footer-minimal{
+  .container{
+    max-width: none;
+  }
+
+  .footer--bottom{
+    text-align: right;
+    margin-top: -64px;
+    .unitize(font-size, @btn-font-size);
+	.toplink{
+		display: none;
+	}
+	.payment{
+		.payment-description{
+			text-align: left;
+			p{
+				margin-bottom: 3px;
+			}
+		}
+		.payment-images{
+			display: flex; 
+			margin-bottom: 3px; 
+			justify-content: center;
+			div{
+				.unitize-padding(0,8,0,8);
+				img{
+					max-height: 30px;	
+				}
+			}
+		}
+	}
+  }
+
+  .column--headline {
+    .unitize(font-size, 16);
+    color: @text-color;
+	text-transform: uppercase;
+	font-weight: 400;
+  }
+
+  .navigation--entry {
+    width: fit-content;
+
+    .navigation--link {
+      .unitize(font-size, @btn-font-size);
+        :hover{
+		  text-shadow: 0.4px 0 0 #000000;
+		}
+      }
+    }
+  
+
+  .column--content{
+    .newsletter--form{
+      .privacy-information{
+        .unitize(font-size, @btn-font-size);
+      }
+      .content{
+        margin-bottom: -14px;
+      }
+      .newsletter--field{
+        padding: 5px;
+        width: 70%;
+        background-color: #fff;
+      }
+      .newsletter--button{
+        border: 0;
+        background-color: transparent;
+        background-image: none;
+        margin-top: -4px;
+      }
+    }
+    .column--desc {
+      .unitize(font-size, @btn-font-size);
+      color: @text-color;
+      margin-bottom: 3px;
+      width: 80%;
+    }
+
+    .column--payment{
+      .unitize(margin-left, -7);
+    }
+
+    .column--shipping{
+      .unitize(margin-left, -7);
+    }
+
+    .RevoxFooterPaymentImage {
+      border: solid;
+      .unitize(border-width, 1);
+      .unitize(border-radius, 3);
+      border-color: @text-color;
+      width: 80px;
+      height: auto;
+      .unitize(max-width, 100);
+      float: left;
+      .unitize(margin-left, 7);
+      .unitize(margin-top, 5);
+      .unitize(margin-bottom, 5);
+      -webkit-filter: grayscale(100%);
+      -moz-filter: grayscale(100%);
+      -o-filter: grayscale(100%);
+      filter: grayscale(100%);
+    }
+  }
+
+  .footer--columns{
+    .unitize(padding-bottom, 0);
+
+    .footer--social{
+      -webkit-filter: grayscale(100%);
+      -moz-filter: grayscale(100%);
+      -o-filter: grayscale(100%);
+      filter: grayscale(100%);
+      display: flex;
+      height: 25px;
+      margin-bottom: 20px;
+
+
+      .RevoxFooterSocialImage {
+        margin-left: 10px;
+
+      }
+      p{
+        .unitize(font-size, @btn-font-size);
+      }
+    }
+  }
+	.sub_language{
+		display: flex;
+		margin-top: 6px;
+		.sub_language_header{
+			width: 165px;
+			p{
+				font-size: 1rem;
+    			color: #000;
+    			text-transform: uppercase;
+    			font-weight: 400;
+			}
+		}
+		img{
+			width: 24px;
+			height: 24px;
+		}
+		a{
+			[class^="icon--"], [class*=" icon--"] {
+				margin-left: 11px;
+				margin-top: 8px;
+				font-size: xx-small;
+			}
+		}
+	}
+	
+	.sellerhiglights {
+		display: flex;
+		border-top: 1px solid #dadae5;
+		.unitize(padding-bottom, 5);
+		.unitize(font-size, 8);
+		justify-content: center;
+		img {
+			.unitize-width(26);
+			.unitize-height(20);
+			.unitize-padding(5, 12, 0, 0);
+		}
+
+		span {
+			display: flex;
+			align-items: flex-end;
+			.unitize-margin(0, 10, 0, -6);
+		}
+	}
+}
+
+.footer--vat-info .vat-info--text {
+  .unitize(margin-left, 12);
+  .unitize(margin-top, 40);
+  .unitize(margin-bottom, -2);
+  .unitize(font-size, 10);
+  text-align: left;
+  a {
+    color: lightgray;
+  }
+}
+
+#languagebutton:hover{
+	text-shadow: 0.4px 0 0 #000000;
+}
+
+#border--ontop{
+	border-top: 1px solid #dadae5
+}
+
+@media screen and (min-width: @tabletViewportWidth) {
+  .footer-main,
+  .footer-minimal {
+	.sellerhiglights {
+		.unitize(font-size, 11);
+		border-top: unset;
+		border-bottom: 1px solid #dadae5;
+		.unitize(margin-bottom, 30);
+		img {
+			.unitize-width(31);
+			.unitize-height(25);
+		}
+
+		span {
+			.unitize-margin(0, 20, 0, -6);
+		}
+	}
+	  
+	.footer--bottom{
+		.payment{
+			display: flex;
+			margin-top: 30px;
+			justify-content: center;
+			.payment-description{
+				margin-top: 4px;
+			}
+		}
+	}
+  }
+  
+  .footer--vat-info .vat-info--text {
+      .unitize(margin-left, 30);
+  }
+	
+  #footerdesktop{
+	display: flex;	
+  }
+}
+
+@media screen and (min-width: @desktopViewportWidth) {
+  .footer-main {
+    .footer--columns{
+      .unitize(padding-bottom, 0);
+      padding-left: 30px;
+    }
+	.sub_language{
+	  .sub_language_header{
+		width: 121px;
+		  p{
+			text-transform: none;
+			font-size: .875rem;
+			font-weight: inherit;
+		  }
+	  }
+	  .footer_language{
+		  border: 1px solid #000;
+	  }
+	}
+  }
+  .footer--vat-info .vat-info--text {
+      .unitize(margin-left, 30);
+  }
+}

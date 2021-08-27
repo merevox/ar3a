@@ -1,0 +1,42 @@
+.confirm--content .product--essential-features {
+    display: none;
+}
+
+.feature--user-comment.block {
+    .unitize(margin-top, 10);
+}
+
+.product--table .content {
+    display: none;
+}
+
+.confirm--content .add-product--form {
+    display: none;
+}
+
+@media screen and(min-width: @tabletViewportWidth) {
+  .feature--user-comment.block {
+    margin-top: 0;
+  }
+	
+  .confirm--content {
+    .unitize-padding(25, 24, 25, 24);
+	.additional--features .user-comment--field {
+       .unitize(height, 40);
+	  }
+  }
+	
+  .confirm--outer-container {
+	.unitize-margin(0, 24, 0, 24);
+  }
+}
+
+@media screen and(min-width: @desktopViewportWidth) {
+   #one-page-checkout {
+      padding-left: 1.5%;
+      justify-content: center;
+	  .register--personal-data {
+    	 width: 33.3%;
+	  }
+   }
+}
